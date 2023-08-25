@@ -1,0 +1,12 @@
+<h2>Lazy Load Component</h2>
+<p>This component is from a NgModule that is lazily loaded</p>
+<p>It provides two services, one in the providers array and one with the Injectable metadata</p>
+<p>It creates its own instance of the Sub One Any service that is unique to this modules context</p>
+<h3>{{ lazyText }}</h3>
+<button class="button" (click)="alterLazyTextFromRoot()">Alter Text From Root Service</button>
+<button class="button" (click)="alterLazyTextFromSubModuleAnyService()">Alter Text From SubModule Any Service</button>
+<button class="button" (click)="alterLazyTextFromLazyLoadArrayService()">Alter Text From LazyLoadArray Service</button>
+<button class="button" (click)="alterLazyTextFromLazyLoadToRootService()">Alter Text From LazyLoadToRoot Service</button>
+<button class="button" (click)="alterLazyTextFromMyLibService()">Alter Text From My Lib Provider Service</button>
+<button class="button" (click)="alterLazyTextFromComponentService()">Alter Text From Component Service</button>
+<button class="reset" (click)="reset()">Reset</button>

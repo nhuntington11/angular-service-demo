@@ -1,0 +1,10 @@
+<h2>Duplicate Component</h2>
+<p>This module is acting as a second 'feature' module that imports the my-lib package</p>
+<ul>
+  <li>The service that is provided 'in root' from my-lib is still a singleton</li>
+  <li>The service provided in the providers array of the module is created again</li>
+</ul>
+<h3>{{ duplicateText }}</h3>
+<button type="button" (click)="alterTextWithMyLibProviderService()">Alter Text With My Lib Provider Service</button>
+<button type="button" (click)="alterTextWithMyLibInRootService()">Alter Text With My Lib In Root Service</button>
+<button type="button" (click)="reset()">Reset</button>

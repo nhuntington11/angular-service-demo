@@ -1,0 +1,16 @@
+<nav>
+  <a class="button" routerLink="/home" style="margin-left: 5px">Home</a><span>  |</span>
+  <a class="button" routerLink="/textmodifier" style="margin-left: 5px">Text Modifier</a><span>  |</span>
+  <a class="button" routerLink="/lazymodule" style="margin-left: 5px">Lazy Module</a><span>  |</span>
+  <a class="button" routerLink="/mylib" style="margin-left: 5px">Library Module</a><span>  |</span>
+  <a class="button" routerLink="/duplicate" style="margin-left: 5px">Duplicate Module</a>
+</nav>
+<h2>The Main App</h2>
+<h3>{{ mainText }}</h3>
+<button type="button" (click)="alterTextWithRootService()">Alter Text With Root Service</button>
+<button type="button" (click)="alterTextWithSubModuleService()">Alter Text With SubModule Service</button>
+<button type="button" (click)="alterTextWithSubModuleAnyService()">Alter Text With SubModule Any Service</button>
+<button type="button" (click)="resetText()">Reset Text</button>
+<hr/>
+<hr/>
+<router-outlet></router-outlet>
